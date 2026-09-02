@@ -27,5 +27,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: TypeScript type check
+        run: npm run typecheck
+
       - name: Build application
         run: npm run build
